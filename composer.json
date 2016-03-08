@@ -1,6 +1,6 @@
 {
-  "name": "inpsyde/wp-nonce-kit",
-  "description": "Providing an object oriented, extensible interface to nonces for WordPress component development.",
+  "name": "PostMeta",
+  "description": "get_post_meta - Test bulid for query postmeta",
   "license": "MIT",
   "type":"package",
   "autoload": {
@@ -10,7 +10,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "WpNonceKit\\Test\\Helper\\": "tests/phpunit/Helper/"
+      "PostMeta\\Test\\Helper\\": "tests/phpunit/Helper/"
     }
   },
   "require-dev": {
