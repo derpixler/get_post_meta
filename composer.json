@@ -5,7 +5,7 @@
   "type":"package",
   "autoload": {
     "psr-4": {
-      "WpNonceKit\\": "src/"
+      "PostMeta\\": "src/"
     }
   },
   "autoload-dev": {
