@@ -10,14 +10,15 @@ You can use this directly in your WordPress theme.
 	 *
 	 * @return string meta value
 	 */
-	$mk = 'my_meta_';
+	$mk = 'seminar_meta_';
 	$pid = $post->ID;
 
 	$_meta = function( $m ) use( $mk, $pid ) {
-		$pm = get_post_meta( $pid, $mk, TRUE);
+		$pm = get_post_meta( $pid, $mk . $m, TRUE);
 		( is_string( $pm ) || is_int( $pm ) ) ? $v = $pm : $v = ( array_key_exists( $mk . $m, $pm ) ? $pm[$mk . $m][$m] : $pm[$m] );
+		return ( $v ) ? $v : false;
 	};
-
-	$profile 	= $_meta( 'profile' );
-	$contact	= $_meta( 'contact' );
+		
+	$subtitle = $_meta( 'subtitle' );
+	$profile = $_meta( 'profile' );
 ```
