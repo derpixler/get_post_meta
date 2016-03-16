@@ -27,7 +27,8 @@ class PostMeta {
 
 		$_meta = function( $m ) use( $mk, $pid ) {
 			$pm = get_post_meta( $pid, $mk . $m, TRUE);
-			return ( is_string( $pm ) || is_int( $pm ) ) ? $v = $pm : $v = ( array_key_exists( $mk . $m, $pm ) ? $pm[$mk . $m][$m] : $pm[$m] );
+			( is_string( $pm ) || is_int( $pm ) ) ? $v = $pm : $v = ( array_key_exists( $mk . $m, $pm ) ? $pm[$mk . $m][$m] : $pm[$m] );
+			 return ( $v ) ? $v : false;
 		};
 		
 		$subtitle = $_meta( 'subtitle', $post->ID );
