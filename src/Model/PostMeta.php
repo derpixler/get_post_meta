@@ -15,10 +15,10 @@ class PostMeta {
 	public function __construct() {
 
 		/**
-		 * Query the postmeta for seminar
+		 * Query the postmeta for a metagroup
 		 *
-		 * @param string $m the seminar_meta_ subkey like seminar_meta_profile.
-		 * @param int $pid  the post id.
+		 * @param string $m is subkey like profile | contact or else.
+		 * @param int $pid the post id.
 		 *
 		 * @return string meta value
 		 */
