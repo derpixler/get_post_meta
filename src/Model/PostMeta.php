@@ -31,8 +31,8 @@ class PostMeta {
 			 return ( $v ) ? $v : false;
 		};
 		
-		$subtitle = $_meta( 'subtitle', $post->ID );
-		$profile = $_meta( 'profile', $post->ID );
+		$subtitle = $_meta( 'subtitle' );
+		$profile = $_meta( 'profile' );
 
 		print_r( $subtitle, $profile );
 
