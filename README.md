@@ -1,4 +1,5 @@
 #Load WordPress PostMeta with a closure method
+[![Build Status](https://travis-ci.org/derpixler/wordpress-get-post-meta-with-closure.svg?branch=master)](https://travis-ci.org/derpixler/wordpress-get-post-meta-with-closure)
 
 You can use this directly in your WordPress theme.
 ```
